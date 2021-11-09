@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div id="fullpage">
+
+        <section>
+            <div class="animated_bg_home">
+                <div class="filter"></div>
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="container">
+
+                <div class="navigation-wrap start-header start-style">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <nav class="navbar navbar-expand-md navbar-light">
+
+                                    <a class="navbar-brand" href="#" target="_blank"><img
+                                            src="./assets/imges/logos/portfolio-logo-light.svg" alt=""></a>
+
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                <a class="nav-link" href="#">Home</a>
+                                            </li>
+                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                <a class="nav-link" href="#">My Skills</a>
+                                            </li>
+                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                <a class="nav-link" href="#">Work</a>
+                                            </li>
+                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                                    role="button" aria-haspopup="true" aria-expanded="false">Blogs</a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                <a class="nav-link" href="#">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </nav>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="home_description text-light" style="position: absolute; top: 300px;">
+                    <h1 style="font-size: 4rem;">Hi, I'm Ayoub Chamchi</h1>
+                    <h5 class="mt-4">Software Developer With Primary Focus on Laravel + ReactJs</h5>
+                    <h5 class="mt-2">Interested in the entire frontend/backend spectrum and working on ambitious
+                        projects with positive people.</h5>
+                </div>
+            </div>
+
+            <div style="
+    position: relative;
+">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40"
+                    class="position-absolute width-full z-1"
+                    style="bottom: -1px;/* position: absolute; */bottom: 145px;">
+                    <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+                </svg>
+                <div style="
+    height: 150px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* z-index: 9999; */
+    /* clip-path: ellipse(51% 20% at 50% 99%); */
+">
+                    <div style="position: absolute;bottom: 50px;right: 10%;">
+                        <canvas id="runner_boy" width="300" height="500"></canvas>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://unpkg.com/rive-js"></script>
+    <script>
+        // autoplays the first animation in the default artboard
+        new rive.Rive({
+            src: './assets/imges/riv/runner_boy.riv',
+            canvas: document.getElementById('runner_boy'),
+            autoplay: true,
+        });
+    </script>
+
+</body>
+
+</html>

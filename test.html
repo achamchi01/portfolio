@@ -1,0 +1,10 @@
+<canvas id="canvas" width="400" height="300"></canvas>
+<script src="https://unpkg.com/rive-js@0.7.16/dist/rive.min.js"></script>
+<script>
+    // autoplays the first animation in the default artboard
+    new rive.Rive({
+        src: './assets/imges/riv/runner_boy.riv',
+        canvas: document.getElementById('canvas'),
+        autoplay: true,
+    });
+</script>
